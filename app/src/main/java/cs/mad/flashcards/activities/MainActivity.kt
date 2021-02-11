@@ -1,7 +1,9 @@
 package cs.mad.flashcards.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import cs.mad.flashcards.R
 
 /*
@@ -22,5 +24,9 @@ class MainActivity : AppCompatActivity() {
             setup views here - recyclerview, button
             don't forget to notify the adapter if the data set is changed
          */
+
+        findViewById<Button>(R.id.button).setOnClickListener {
+            startActivity(Intent(this, Lab4ExampleActivity::class.java))
+        }
     }
 }
